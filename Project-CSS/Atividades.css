@@ -1,0 +1,395 @@
+.main-top {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    gap: 32px;
+
+
+
+    max-width: 90%;
+    margin: 0 auto;
+    height: auto; /* Removido o valor fixo */
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    border-radius: 16px;
+    margin-top: 100px;
+    margin-bottom: 2%;
+}
+
+.main-top-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 8px;
+
+    width: 100%;
+    max-width: 342px;
+    height: 56px;
+
+    background: #F5DA17;
+    border: 1px solid #BB6B00;
+    box-shadow: 0px 10px 4px rgba(63, 63, 63, 0.01),
+                0px 6px 3px rgba(63, 63, 63, 0.05),
+                0px 2px 2px rgba(63, 63, 63, 0.09),
+                0px 1px 1px rgba(63, 63, 63, 0.1),
+                inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.main-top-button:hover{
+    background-color: var(--amarelo-hover);
+}
+
+p > .main-top-button {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: #303030;
+}
+
+section.activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    max-width: 95%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.main-middle-activites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 100%;
+    max-width: 736px;
+    height: auto;
+}
+
+div.main-middle-activites > h1 {
+    font-size: 2em;
+}
+
+div.main-middle-activites > p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #303030;
+}
+
+.each-activitie:nth-child(even) {
+    background: var(--bg-surface-base, #FAFAFA);
+}
+
+div#music-activitie, div#medical-activitie, div#later-activitie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 95%;
+    margin: 0 auto;
+    width: 888px;
+    height: 236px;
+
+
+    padding: 40px 0;
+    height: auto;
+    gap: 30%;
+}
+
+ /*Inicio elementos de atividades */
+
+#music-activitie > div.activitie-text, 
+#medical-activitie > div.activitie-text-left, 
+#later-activitie > div.activitie-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+    max-width: 544px;
+
+}
+
+div.activitie-text > h1{
+    font-size: 2em;
+}
+
+.activitie-text-p-box{
+
+    text-align: end;
+
+    p{
+        font-size: 20px;
+    }
+}
+
+
+
+#music-activitie > .icon-music, 
+#medical-activitie > .icon-medical, 
+#later-activitie > .icon-alert {
+    height: 280px;
+    max-width: 40%;
+
+    img{
+        width: 176px;
+    }
+}
+/*Fim elementos de atividades */
+
+/*Inicio elementos de atividades inverso*/
+div#medical-activitie{
+    div.icon-medical{
+        order: 2;
+
+    }
+}
+
+#medical-activitie > div.activitie-text-left{
+    align-items: flex-start;
+    align-items: start;
+
+    h1{
+
+        font-size: 2em;
+    }
+
+    p{
+        font-size: 20px;
+    }
+}
+
+/*Fim elementos de atividades inverso*/
+
+/* Antiga area de testimonials
+section.feedback {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+    height: auto;
+}
+.feedback-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.feedback-card {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    gap: 16px;
+    width: 100%;
+    max-width: 352px;
+    height: auto;
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    border-radius: 16px;
+}
+*/
+.footer-activitie {
+    background: linear-gradient(to right, #4A4A4A, var(--preto-text));
+    color: white;
+    padding: 3rem 10rem;
+    text-align: center;
+    width: 100%;
+}
+
+.bloco-footer {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    padding-bottom: 0px;
+}
+
+
+.feedback-card{
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1245px){
+
+    .feedback-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centraliza os cartões */
+        gap: 2rem; /* Espaçamento entre os cartões */
+        margin-top: 2rem;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 767px){
+ /*inicio do  header*/
+div.main-top{
+    gap: 12px;
+    padding-left: 10px;
+
+    h2{
+        text-align: center;
+    }
+    h3{
+        width: 50%;
+        font-size: 90%;
+        font-weight: bold;
+    }
+}
+
+.main-top-button{
+
+    max-width: 370px;
+    height: 75px;
+    gap: 10px;
+
+}
+    /* Fim do header */
+
+
+    div#music-activitie, div#medical-activitie, div#later-activitie{
+        gap: 10%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #music-activitie > div.activitie-text, 
+#medical-activitie > div.activitie-text-left, 
+#later-activitie > div.activitie-text{
+    align-items: center;
+
+}
+/*Inicio atividade inversa*/
+div#medical-activitie{
+    div.icon-medical{
+        order: 0;
+
+    }
+
+     div.activitie-text-left{
+
+        align-items: center;
+}
+
+}
+
+.activitie-text-left{
+    align-items: center;
+    text-align: justify;
+}
+/*fim atividade inversa*/
+#music-activitie > .icon-music, 
+    #medical-activitie > .icon-medical, 
+    #later-activitie > .icon-alert{
+        height: 230px;
+    }
+
+
+    #music-activitie > .icon-music > img, 
+    #medical-activitie > .icon-medical > img, 
+    #later-activitie > .icon-alert > img {
+    height: 165px;
+    width: 100px;
+}
+
+div.activitie-text, div.activitie-text-left{
+
+    padding-left: 5px;
+    padding-right: 5px;
+    p{
+        font-size: 20px;
+    }
+}
+
+.activitie-text-p-box, .activitie-text-p-box-left{
+
+    text-align: justify;
+
+
+}
+
+
+
+.text-colum{
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Testimonials section */
+.testimonial-card-responsive-text{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    
+}
+.testimonials-title {
+    text-align: center; /* Centraliza o texto do título */
+    line-height: 1rem;
+}
+
+.testimonials-title h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.testimonials-title p {
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    width: 250px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+
+
+.feedback-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os cartões */
+    gap: 2rem; /* Espaçamento entre os cartões */
+    margin-top: 2rem;
+}
+
+.testimonial-card {
+    width: 80vw;
+    max-width: 400px; /* Limita a largura máxima dos cartões */
+    height: auto;
+    padding: 0.5rem;
+    background-color: #fff; /* Cor de fundo branca */
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.1); /* Sombra ao redor do cartão */
+    border-radius: 1rem;
+    display: flex;
+    align-items: flex-start; /* Centraliza verticalmente os elementos no cartão */
+
+    gap: 1rem;
+}
+
+.testimonial-card img {
+    height: 2rem;
+}
+
+.testimonial-card-text p {
+    font-size: 1rem;
+    width: 48vw;
+    max-width: 300px; /* Limita a largura do texto */
+}
+}

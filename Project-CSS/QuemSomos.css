@@ -1,0 +1,569 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --amarelo-main: #f5da17;
+    --amarelo-hover: #FFC300;
+    --laranja-bord: #c26c2f;
+    --card-border: #0B132412;
+    --preto-text: #303030;
+    --preto-true: #000000;
+    --branco: #FAFAFAFA;
+    --branco-true: #FFFFFF; 
+    
+
+}
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    background-color: var(--branco);
+    color: var(--preto-text);
+    overflow-x: hidden;
+}
+.header-background{             /* Background do "header" - Gradient preto */
+    background-image: linear-gradient(to right, #4A4A4A, var(--preto-true));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    z-index: -2;
+
+    width: 100%;
+    height: 400px;
+    position: absolute;
+}
+
+.header-content{
+    padding: 10.6rem 0rem 2% 6.25rem;
+    color: var(--branco);
+    align-items:end;
+    
+    width: 100%;
+    margin-bottom: 20vh;
+    h1{
+        width: 70%; 
+        font-size: 1.5em;
+        margin-bottom: 0;
+        padding-right: 4em;
+        line-height: 1.1em;
+        text-align:end;
+    }
+
+}
+
+/* Fim do Header */
+
+/* Inicio Sobre nós */
+
+.about-us-box {
+    display: flex;
+    flex-direction: row; /* Colocar os itens lado a lado */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    align-items: flex-start; /* Alinhamento superior dos itens */
+    width: 100%; /* Garantir que o contêiner ocupe a largura completa */
+    padding: 20px; /* Adicionar um espaço interno opcional */
+}
+.about-us-inner {
+    flex: 2; /* O conteúdo textual ocupa mais espaço */
+    width: 100%; /* Garantir que o conteúdo ocupe toda a largura disponível */
+    padding: 20px; /* Espaçamento interno para o conteúdo */
+    h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+.psychologic-img {
+    flex: 1; /* A imagem ocupa menos espaço em relação ao texto */
+    max-width: 100%; /* Garantir que a imagem não ultrapasse o contêiner */
+    margin-left: 20px; /* Espaço entre a imagem e o texto */
+    margin-bottom: 15vh;
+}
+
+.psychologic-img img {
+    width: 100%;
+    max-width: 380px; /* Ajustar o tamanho da imagem */
+    height: auto; /* Manter a proporção da imagem */
+}
+
+.about-us-content{
+
+        display: flex;
+        flex-direction: column;
+        color: var(--preto-text);
+        padding-left: 2vw;
+        margin-bottom: 15   0px;
+        h1{
+            text-align: left;
+            font-size: 30px;
+            margin-bottom: 10px;
+
+        }
+        p{
+            text-align: left;
+            width: 60%;
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+    } 
+
+    .about-us-biography{
+        background-color: var(--branco-true);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        img{
+            margin-top: -5vh;
+            margin-bottom: 3vh;
+        }
+        p{
+        font-size: 18px;
+     
+        }
+        li{
+            list-style: none;
+        }
+    
+    }
+
+.curiosity-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    color: var(--branco-true);
+    margin-bottom: 8em ;
+}
+.curiosity-img {
+    position: absolute;
+    background-image: url(../assets/curiosity-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -2;
+    width: 100%;
+    height: 450px;
+}
+.curiosity-back{
+    position: absolute;
+    z-index: -1;
+    background-color: #30303092;
+    width: 100%;
+    height: 450px;
+}
+.curiosity-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.curiosity-title {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.curiosity-description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.curiosity-description p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-button{
+    width: 18rem;
+
+    padding: 1rem 0.5rem;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    background-color: var(--amarelo-main);
+    color: var(--preto-text);
+
+    border-radius: 10px;
+    border: none;
+
+    cursor: pointer;
+    transition: all 0.7s;
+}
+.contact-button:hover{
+    background-color: var(--amarelo-hover);
+}
+
+/*Fim da section curiosity*/
+
+
+.img-lamp-box{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    justify-content: flex-end;
+    margin-top: -80px;
+}
+
+
+.intro-button{
+    max-width: 25vw;
+    max-height: 10vh;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    background-color: var(--amarelo-main);
+    color: var(--preto-text);
+    font-weight: bold;
+    border-radius: 8px;
+    border: 0.8px solid var(--laranja-bord);
+    cursor: pointer;
+    transition: all 0.5s;  
+    margin-left: 65vw;
+}
+
+.intro-button:hover{
+    background-color: var(--amarelo-hover);
+}
+
+/* Início do Footer */
+.footer {
+    background: linear-gradient(to right, #4A4A4A, var(--preto-true));
+    color: var(--branco-true);
+    padding: 3rem 10rem;
+}
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left {   /* bloco da esquerda */
+    width: 400px;
+    text-align: left;
+    h2{
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 3.25rem;
+    }
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.right-content{
+    margin-bottom: 2rem;
+    p{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    a{
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-decoration: none;
+        color: var(--amarelo-main);
+
+    }
+}
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    a{
+        font-size: 3rem;
+        color: var(--branco-true);
+    }
+}
+.footer-copy{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 100px;
+}
+/*Fim do Footer*/
+
+/* Responsividade */
+
+
+/*Dispositivos Móveis*/
+
+@media only screen and (max-width: 767px) {
+
+
+   .header-content{
+    padding: 8rem 1rem;
+    align-items: end;
+    text-align: end;
+    h1{
+        width: 100%;
+        padding-right: 0;
+        font-size: 25px;
+    }
+   }
+   .about-us-box{
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .psychologic-img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 200px;
+    margin-top: -10vh;
+    margin-bottom: 1rem;  /* Espaço entre a imagem e o texto */
+}
+
+.about-us-inner{
+    margin-bottom: 13vh;
+}
+
+.none-bar{
+    display: none;
+}
+.curiosity-back, .curiosity-img{
+    height: 600px;
+}
+.curiosity-title{
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.8rem;
+}
+.curiosity-description p{
+    font-size: 1.2rem;
+    width: 400px;
+}
+.about-us-box-2 {
+    padding: 0 1rem; /* Espaço lateral */
+}
+
+.about-us-content {
+    display: flex;
+    flex-direction: column; /* Colocar os itens um abaixo do outro */
+    align-items: center; /* Centralizar os itens */
+    width: 100%; /* Garantir que o contêiner ocupe a largura total */
+}
+.about-us-inner-2 {
+    width: 100%; /* Garantir que o texto ocupe toda a largura disponível */
+    text-align: left; /* Alinhar o texto à esquerda */
+    padding: 0 1rem; /* Adicionar padding para os lados */
+    padding-left: 2vw;
+}
+.about-us-inner-2 h1 {
+    font-size: 24px; /* Ajustar o tamanho da fonte do título */
+}
+.about-us-inner-2 p {
+    font-size: 18px; /* Ajustar o tamanho da fonte do parágrafo */
+    line-height: 1.5; /* Melhorar a legibilidade */
+}
+.about-us-biography {
+    width: 100%; /* Garantir que a biografia ocupe toda a largura */
+    text-align: left; /* Alinhar o texto à esquerda */
+    padding: 0 1rem; /* Espaço lateral */
+    margin-top: 2rem; /* Espaço entre a biografia e a aula de música */
+}
+.about-us-biography img {
+    max-width: 100%; /* Imagem ocupa 100% do contêiner */
+    height: auto; /* Manter a proporção da imagem */
+    margin-bottom: 1rem; /* Espaço abaixo da imagem */
+}
+.about-us-biography p {
+    font-size: 16px; /* Ajustar o tamanho da fonte do parágrafo */
+    line-height: 1.5; /* Melhorar a legibilidade */
+}
+
+
+.img-lamp-box img{
+    width: 120px;
+
+}
+ .intro-button{
+    padding: 12px 0px 12px 0px;
+    margin: 0 auto;
+    max-width: 200px;
+    margin-bottom: 10vh;
+ }
+
+.footer{
+    padding: 3rem 1rem;
+    flex-direction: column;
+}
+.footer-content{
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer-left{
+    width: 100%;
+    h2{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+.footer-right{
+    text-align: left;
+}
+.right-content{
+    font-size: 1.2rem;
+}
+.footer-social{
+    justify-content: start;
+    a{
+        font-size: 2.8rem;
+    }
+}
+.footer-copy{
+    text-align: center;
+    font-size: 1rem;
+}
+/*Footer*/
+
+.header-background, .curiosity-img {
+    max-width: 100%;
+    width: 100%;
+}
+
+}
+
+
+/* Tablets */
+
+@media only screen and  (min-width: 768px) and (max-width: 1024px) {
+
+    .header-content{
+     padding: 8rem 1rem;
+     align-items: end;
+     text-align: end;
+     margin: 0;
+     h1{
+         padding-right: 0;
+         font-size: 24px;
+     }
+    }
+    .about-us-box{
+        flex-direction: column;
+        align-items: center;
+       }
+    
+       .psychologic-img {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-width: 200px;
+        margin-top: 10vh;
+        margin-bottom: 1rem;  /* Espaço entre a imagem e o texto */
+    }
+    
+    
+    .about-us-inner{
+        h1{
+            font-size: 30px;
+            text-align: center;
+        }
+        p{
+            font-size: 28px;
+        }
+        margin-bottom: 10vh;
+    }
+ .about-us-biography {
+     width: 100%;
+     padding-left: 3vw;
+     h1{
+        font-size: 40px;
+         margin-bottom: 15px;
+     }
+     p{
+     font-size: 25px;
+     text-align: left;
+ }
+ }
+
+ .curiosity-back, .curiosity-img{
+     height: 600px;
+ }
+ .curiosity-title{
+     flex-direction: column;
+     gap: 10px;
+     font-size: 1.8rem;
+ }
+ .curiosity-description p{
+     font-size: 1.7rem;
+     width: 80vw;
+ }
+
+ .img-lamp-box img{
+     width: 30vw;
+
+ }
+  .intro-button{
+     padding: 12px 0px 12px 0px;
+     margin: 0;
+     max-width: 35vw;
+     margin-left: 40vw;
+     margin-right: -40vw;
+     margin-bottom: 5vh;
+    
+  }
+
+  .intro-button-link{
+    text-decoration: none;
+  }
+ .about-us-inner-2{
+     width: 110vw;
+     padding: 1rem;
+     h1{
+         font-size: 40px;
+     }
+     p{
+        font-size: 25px;
+     }
+ }
+
+ .footer{
+     padding: 3rem 1rem;
+     flex-direction: column;
+ }
+ .footer-content{
+     flex-direction: column;
+     gap: 2rem;
+ }
+ .footer-left{
+     width: 100%;
+     h2{
+         font-size: 1.5rem;
+         margin-bottom: 1rem;
+     }
+ }
+ .footer-right{
+     text-align: left;
+ }
+ .right-content{
+     font-size: 1.2rem;
+ }
+ .footer-social{
+     justify-content: start;
+     a{
+         font-size: 2.8rem;
+     }
+ }
+ .footer-copy{
+     text-align: center;
+     font-size: 1rem;
+ }
+ /*Footer*/
+}

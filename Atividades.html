@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Alerta</title>
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Project-CSS/ProjetoAlerta.css">
+    <link rel="stylesheet" href="Project-CSS/Atividades.css">
+    
+</head>
+<body class="bg-white text-gray-800">
+    <header class="header">
+        <nav class="navigation">
+
+            <img src="assets/logo-instituto.png" alt="">
+
+            <div class="navigation-links">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="QuemSomos.html" class="nav-link">Quem somos</a>
+                <a href="Atividades.html" class="nav-link">Atividades</a>
+                <a href="Contribua.html" class="nav-link">Contribua</a>
+            </div>
+
+            <div class="menu">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span> <!--Menu celular-->
+            </div>
+        </nav>
+        
+    </header>
+
+    <div class="header-background"></div> <!--Background do "header" - imagem das crianças-->
+    <div class="header-background-2"></div>  <!--Background do "header" - filtro com transição preto para amarelo-->
+
+    <div class="header-content">
+        <h1>INSTITUTO ALERTA</h1>
+        <p>TRANSFORMANDO VIDAS, ATRAVÉS DO AMOR</p>
+        <button class="contact-button" onclick="ChatWhatsApp()">Entre em contato conosco</button>
+    </div>
+<!-- Fim header Section -->
+
+<!--Início Main Section-->
+
+<main >
+        <section>
+            <div class="main-top">
+                <h2>Seja beneficiado pelo Instituto Alerta!</h2>
+                <button class="main-top-button" onclick="navegarUrlContribua()"><h3>Se associe ao Instituto Alerta</h3> <img src="assets/arrow-right.png" alt=""></button>
+            </div>
+        </section>
+
+        <section class="activities">
+            <div class="main-middle-activites">
+                <h1 >Nossas atividades</h1>
+                    <p >Atividades oferecidas pelo Instituto Alerta</p>
+            </div>
+
+            
+            <div class="each-activitie" id="music-activitie">
+                <div class="icon-music"><img src="assets/icon-music.png" alt=""></div>
+                <div class="activitie-text"> 
+                    <h1>Aulas de música</h1>
+                    <div class="activitie-text-p-box" >
+                        <p>Aula de música para a comunidade: Teclado, Guitarra, Baixo, Bateria e Canto.</p> <br>
+                        <p class="text-colum">O Instituto Alerta oferece aulas de música para pessoas em situação de vulnerabilidade, com cursos práticos de diversos instrumentos e canto. O objetivo é desenvolver o talento musical de crianças, jovens e adultos, utilizando a música como ferramenta de transformação social e promoção da autoestima, em um ambiente acolhedor e motivador.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="each-activitie" id="medical-activitie">
+                <div class="icon-medical"><img src="assets/icon-medical.png" alt=""></div>
+                <div class="activitie-text-left"> 
+                    <h1>Psicólogo </h1>
+                    <div class="activitie-text-p-box-left" >
+                        <p>Atendimento psicológico presencial ou remoto oferecido para a comunidade.</p> <br>
+                        <p class="text-colum">
+                            O Instituto Alerta, além de oferecer formação musical, disponibiliza atendimento psicológico para os participantes e suas famílias. O objetivo é promover o bem-estar emocional, com apoio de profissionais qualificados, em um ambiente seguro e confidencial, fortalecendo o equilíbrio pessoal e acolhendo quem enfrenta desafios emocionais.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <div class="each-activitie" id="later-activitie">
+                <div class="icon-alert"><img src="assets/icon-alert.png" alt=""></div>
+                <div class="activitie-text"> 
+                    <h1>Em breve</h1>
+                    <div class="activitie-text-p-box" >
+                        <p class="text-colum">Em breve o Instituto Alerta trará mais atividades para benefício dos sócios.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            
+                <div class="testimonials-title">
+                    <h2>Depoimentos</h2>
+                    <p>O que pais, voluntários e parceiros dizem sobre o Instituto Alerta:</p>
+                </div>
+                
+                <div class="testimonials-cards">
+                    <div class="testimonial-card" class="testimonial-card-responsive-text">
+                        <img src="assets/icon-feedback.png" alt="">
+                        <div class="testimonial-card-text">
+                            <h3>Cauê - Professor</h3>
+                            <p>Ser professor no Instituto Alerta é muito mais do que dar aulas de música, é fazer parte de uma verdadeira rede de transformação. Aqui, eu vejo de perto o impacto que a música pode ter na vida das pessoas. </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" class="testimonial-card-responsive-text">
+                        <img src="assets/icon-feedback.png" alt="">
+                        <div class="testimonial-card-text">
+                            <h3>Geovana - Mãe</h3>
+                            <p>Quando descobri o Instituto Alerta, estava desesperada por um lugar onde meus filhos pudessem ter uma chance de aprender algo novo e útil. As aulas de teclado têm sido um sonho para a minha filha. </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" class="testimonial-card-responsive-text">
+                        <img src="assets/icon-feedback.png" alt="">
+                        <div class="testimonial-card-text">
+                            <h3>Breno - Aluno</h3>
+                            <p>Quando comecei as aulas no Instituto Alerta, não fazia ideia de como isso ia mudar a minha vida. As aulas são muito divertidas, e me ajudam a me expressar de uma forma que eu nunca pensei que fosse possível.</p>
+                        </div>
+                </div>
+            </div>
+            
+</main>
+
+<!-- Footer Section -->
+
+    
+<footer class="footer">
+    <div class="footer-content">
+
+        <div class="footer-left">
+            <h2>Vire um associado ao Instituto Alerta</h2>
+            <button class="contact-button" onclick="ChatWhatsApp()">Entre em contato</button>
+        </div>
+
+        <div class="footer-right">
+
+            <div class="right-content">
+                <p>Ou entre em contato via: </p>
+                <a href="mailto:contato@institutoalerta.org.br">contato@institutoalerta.org.br</a>
+            </div>
+
+            <div class="footer-social">
+                <a onclick="ChatWhatsApp()"><i class="fab fa-whatsapp"></i></a>
+                <a onclick="ChatInstagram()"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <div class="footer-copy">
+                <p>&copy; 2024 por Instituto Alerta. Todos os direitos reservados.</p>
+            </div>
+        </div>
+        
+
+    </div>
+</footer>
+    </div>
+
+<script src="Project-Scripts/script.js"></script>
+
+</body>
+</html>
