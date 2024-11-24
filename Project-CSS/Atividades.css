@@ -1,3 +1,27 @@
+
+.dark-mode {
+    /* Variáveis para tema escuro */
+    --amarelo-main: #FFC107;
+    --amarelo-hover: #FFD54F;
+    --laranja-bord: #FF6F00;
+    --card-border: #444444;
+    --preto-text: #E0E0E0;
+    --preto-true: #121212;
+    --branco: #212121;
+    --branco-true: #121212;
+    --branco-true-cards:#232323;
+    --gray-activities: #232323;
+    
+    
+    
+}
+
+/* Corpo no tema escuro */
+body.dark-mode {
+    background-color: var(--preto-true);
+    color: var(--preto-text);
+}
+
 .main-top {
     box-sizing: border-box;
     display: flex;
@@ -11,8 +35,8 @@
     max-width: 90%;
     margin: 0 auto;
     height: auto; /* Removido o valor fixo */
-    background: #FFFFFF;
-    border: 1px solid #DCDCDC;
+    background: var(--branco-true-cards);
+    border: 2px solid var(--card-border);
     border-radius: 16px;
     margin-top: 100px;
     margin-bottom: 2%;
@@ -72,7 +96,7 @@ section.activities {
     align-items: center;
     padding: 0px;
     gap: 16px;
-
+    
     width: 100%;
     max-width: 736px;
     height: auto;
@@ -87,11 +111,11 @@ div.main-middle-activites > p {
     font-size: 24px;
     line-height: 32px;
     text-align: center;
-    color: #303030;
+    
 }
 
 .each-activitie:nth-child(even) {
-    background: var(--bg-surface-base, #FAFAFA);
+    background: var( --gray-activities );
 }
 
 div#music-activitie, div#medical-activitie, div#later-activitie {
@@ -103,9 +127,9 @@ div#music-activitie, div#medical-activitie, div#later-activitie {
     margin: 0 auto;
     width: 888px;
     height: 236px;
-
-
-    padding: 40px 0;
+    border-radius: 20px;
+    border: 2px solid var(--card-border);
+    padding: 40px 20px;
     height: auto;
     gap: 30%;
 }
@@ -374,7 +398,7 @@ div.activitie-text, div.activitie-text-left{
     max-width: 400px; /* Limita a largura máxima dos cartões */
     height: auto;
     padding: 0.5rem;
-    background-color: #fff; /* Cor de fundo branca */
+    
     box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.1); /* Sombra ao redor do cartão */
     border-radius: 1rem;
     display: flex;

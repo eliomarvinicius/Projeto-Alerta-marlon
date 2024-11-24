@@ -10,7 +10,12 @@
     --preto-true: #000000;
     --branco: #FAFAFAFA;
     --branco-true: #FFFFFF;
+   
+    
 }
+
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -23,6 +28,29 @@ body {
     overflow-x: hidden;
 }
 
+.dark-mode {
+    /* Variáveis para tema escuro */
+    --amarelo-main: #FFC107;
+    --amarelo-hover: #FFD54F;
+    --laranja-bord: #FF6F00;
+    --card-border: #444444;
+    --preto-text: #E0E0E0;
+    --preto-true: #121212;
+    --branco: #212121;
+    --branco-true: #121212;
+    --branco-true-cards:#232323;
+    
+    
+    
+}
+
+/* Corpo no tema escuro */
+body.dark-mode {
+    background-color: var(--preto-true);
+    color: var(--preto-text);
+}
+
+
 /* Início Header Section */
 .header {
     position: absolute;
@@ -32,6 +60,7 @@ body {
     width: 75vw;
     margin: 10px 200px;
 }
+
 .navigation{
     display: flex;
     justify-content: space-between;
@@ -42,6 +71,24 @@ body {
         width: 50px;
     }
 }
+
+.theme-toggle button {
+    background: var(--amarelo-main);
+    color: var(--preto-text);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+    opacity: 1;
+}
+
+.theme-toggle button:hover {
+    background: var(--amarelo-hover);
+    color: var(--branco-true);
+}
+
 .navigation-links{
     a{
         margin: 0px 10px;
@@ -207,7 +254,7 @@ body {
 
     width: 350px;
     height: 300px;
-    background: var(--branco-true);
+    background: var(--branco-true-cards);
     box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--card-border);
     border-radius: 0.5rem;
@@ -342,7 +389,7 @@ body {
     width: 350px;
 
 
-    background: var(--branco-true);
+    background: var(--branco-true-cards);
 
     box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.1);
     border-radius: 1rem;

@@ -13,6 +13,29 @@
     --branco-back1: #F4F4F4;
 }
 
+.dark-mode {
+    /* Variáveis para tema escuro */
+    --amarelo-main: #FFC107;
+    --amarelo-hover: #FFD54F;
+    --laranja-bord: #FF6F00;
+    --card-border: #444444;
+    --preto-text: #E0E0E0;
+    --preto-true: #121212;
+    --branco: #212121;
+    --branco-true: #121212;
+    --branco-true-cards:#232323;
+    --preto-back1:#121212;
+    
+    
+    
+}
+
+/* Corpo no tema escuro */
+body.dark-mode {
+    background-color: var(--preto-true);
+    color: var(--preto-text);
+}
+
 /*Início do Header*/
 .header-background{
     position: absolute;
@@ -35,7 +58,8 @@
 /*Início do associate*/
 .associate{
     width: 100%;
-    background-color: var(--branco-back1);
+    
+    background-color: var(--preto-back1);
     display: flex;
     justify-content: center;
     align-items: center;

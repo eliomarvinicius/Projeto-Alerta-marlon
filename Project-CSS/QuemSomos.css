@@ -21,6 +21,31 @@ body {
     color: var(--preto-text);
     overflow-x: hidden;
 }
+
+.dark-mode {
+    /* Variáveis para tema escuro */
+    --amarelo-main: #FFC107;
+    --amarelo-hover: #FFD54F;
+    --laranja-bord: #FF6F00;
+    --card-border: #444444;
+    --preto-text: #E0E0E0;
+    --preto-true: #121212;
+    --branco: #212121;
+    --branco-true: #121212;
+    --branco-true-cards:#232323;
+    --branco-true-biography:#232323;
+    
+    
+    
+}
+
+/* Corpo no tema escuro */
+body.dark-mode {
+    background-color: var(--preto-true);
+    color: var(--preto-text);
+}
+
+
 .header-background{             /* Background do "header" - Gradient preto */
     background-image: linear-gradient(to right, #4A4A4A, var(--preto-true));
     background-repeat: no-repeat;
@@ -93,7 +118,7 @@ body {
 
         display: flex;
         flex-direction: column;
-        color: var(--preto-text);
+        
         padding-left: 2vw;
         margin-bottom: 15   0px;
         h1{
@@ -111,7 +136,7 @@ body {
     } 
 
     .about-us-biography{
-        background-color: var(--branco-true);
+        background-color: var(--branco-true-biography);
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         align-items: center;
